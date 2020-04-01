@@ -4,4 +4,7 @@
   <%@owner.pets.each do |pet|%>
   <li><a href="http://localhost:9393/pets/<%=pet.id%>"><%= pet.name %></a></li>
   <%end%>
+
 </ul>
+<br>
+  <p><a href="http://localhost:9393/owners/<%=@owner.id%>/edit"><%= "Edit Owner" %></a></p>
